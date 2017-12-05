@@ -77,6 +77,9 @@ class Calendar extends Component {
   onSubmit = (evt) => {
     evt.preventDefault();
     const title = evt.target[0].value
+    const description = evt.target[1].value
+    const start = evt.target[2].value
+    const end = evt.target[3].value
     console.log('====================================');
     console.log(title);
     console.log('====================================');
