@@ -5,8 +5,9 @@ const AddEvt = (props) =>{
     return (
     <Modal 
         isOpen={props.isOpen}
-        onRequestClose={props.close}
+        onRequestClose={props.onClose}
         contentLabel="Ajout Rdv"
+        className="modal"
     >
         <form onSubmit={props.onSubmit}>
             <input type="text" name="title" placeholder="Titre"/>
